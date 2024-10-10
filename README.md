@@ -1,4 +1,4 @@
-# Frogger-Game
+# Frogger
 
 Road-Crossing Android Mobile Game
 
