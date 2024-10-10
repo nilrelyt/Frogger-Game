@@ -1,42 +1,21 @@
-# Frogger-Game
+# Group47_Frogger
+This is the github repository for CS 2340 Group 47's Frogger project to be implemented with Android Studio.
 
-# Features
 
+Sprint 2 
 
-# Release Notes
-
-### Version 1.4 - Sprint 5:
-
-- **Logs**: Added two types of logs with different gameplay behavior. Players move in the same direction and speed as the log when on top of it. If a player falls off a log, they lose a life.
-- **Goal Functionality**: If the player reaches the goal tile, the winning game screen is displayed.
-- **Win Screen**: Displays the final score and options to restart or quit the game.
-
-### Version 1.3 - Sprint 4:
-
-- **Water Tiles**: Introduced water tiles where players lose a life upon contact.
-- **Collisions and Lives**: Players lose a life if they collide with a vehicle. Implemented the functionality to track lives and transition to the game over screen when lives run out.
-- **Game Over Screen**: Added a game over screen that shows the final score and provides options to restart or quit the game.
-
-### Version 1.2 - Sprint 3:
-
-- **Vehicles**: Implemented three types of vehicles, each with different speeds.
-- **Scoring**: Players are awarded points based on forward movement.
-
-### Version 1.1 - Sprint 2:
-
-- **Player Movement**: Added the ability for the player to move up, down, left, and right within screen boundaries using a grid/tile system.
-- **Map Layout**: Introduced safe, road, and river tiles with varying widths. The goal tile is displayed at the far end of the screen, but no functionality is associated with it yet.
-
-### Version 1.0 - Sprint 1:
-
-- **Start Screen**: Added a start screen with options to start or quit the game.
-- **Initial Configuration**: Implemented an input screen for the player's name, difficulty selection, and character sprite selection.
-- **Game Screen**: Displayed player name, character sprite, and starting lives on the game screen. No movement or functionality beyond visual setup yet.
-
-## Contributors
--   [Tyler Lin](#)
--   [Doan Tran](#)
--   [Eileen Liu](#)
--   [Hannah Kim](#)
--   [Jennifer Light](#)
+    - Make the player able to move up, down, left, and right. It may be a good idea to simplify things 
+    by using a grid or tile system to represent all possible locations of the player. 
+        o The player should not be able to move off the screen. 
+		
+    - Generate safe tiles, road tiles, and river tiles. Rivers and roads should extend across the width of 
+    the screen.
+        o Roads and rivers should be of varying widths. For example, the player may have to cross 
+        a 2-tile river or a 5-tile river, assuming a tile system is used. 
+        o Water tile functionality will be implemented in a future sprint. 
+		
+    - Implement a goal tile 
+        o Should be located at the opposite end of the map with respect to the player. 
+        o The functionality associated with the goal tile (for example, going to the win screen) will 
+        be implemented in a future sprint. For now, simply have the goal tile display. 
 
