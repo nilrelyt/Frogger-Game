@@ -1,7 +1,16 @@
 # Frogger-Game
 
+Road-Crossing Android Mobile Game
+
 # Features
 
+| Screen                            | Description                                 |
+|-----------------------------------|---------------------------------------------|
+| <img src="homescreen.png" alt="Start Screen" width="250"/> | **Start Screen**: The initial screen where users can start or quit the game. |
+| <img src="configuration.png" alt="Configuration Screen" width="250"/> | **Configuration Screen**: Allows players to input their name, select difficulty, and choose a character sprite. |
+| <img src="gamescreen.png" alt="Game Screen" width="250"/> | **Game Screen**: The main gameplay screen where players navigate the character across roads and rivers. |
+| <img src="victory.png" alt="Victory Screen" width="250"/> | **Victory Screen**: When the player reaches the goal, this screen shows the final score and indicates a win. |
+| <img src="gameover.png" alt="Game Over Screen" width="250"/> | **Game Over Screen**: Displays when the player loses all lives and offers options to restart or quit. |
 
 # Release Notes
 
