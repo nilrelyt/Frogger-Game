@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FroggerHome</string>
+    <string name="frogger">Frogger</string>
+    <string name="start">Start</string>
+    <string name="exit">Exit</string>
+    <string name="page2">Page2</string>
+
+    <string name="Frogger">dropDownMenuExample</string>
+    <string name="spinner_sample_program">Spinner Sample Program</string>
+    <string name="enter_how_much_cookies_you_want">Enter How Much Cookies You Want</string>
+    <string name="choose_your_difficulty">Choose Your Difficulty</string>
+    <string name="choose_your_character">Choose Your Character</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="_3">3</string>
+    <string name="Lives" />
+    <string name="Difficulty" />
+    <string name="Score" />
+    <string name="Name" />
+    <string name="victory">VICTORY</string>
+    <string name="game_over">GAME OVER</string>
+    <string name="restart">Restart</string>
+    <string name="score">Score</string>
+    <string name="endscore">endScore</string>
+    <string-array name="difficulty">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+</resources>

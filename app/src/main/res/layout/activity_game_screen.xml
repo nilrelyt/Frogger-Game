@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B4D5A3"
+    android:visibility="visible"
+    tools:context=".GameScreen">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Name: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="player name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Difficulty: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/difficulty_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="level"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Score: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <TextView
+        android:id="@+id/score_value"
+        android:layout_width="39dp"
+        android:layout_height="24dp"
+        android:fontFamily="casual"
+        android:text="0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <TextView
+        android:id="@+id/lives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Lives: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/lives_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <LinearLayout
+        android:id="@+id/screen"
+        android:layout_width="422dp"
+        android:layout_height="597dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/goal"
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            app:srcCompat="@drawable/goal" />
+
+        <ImageView
+            android:id="@+id/river"
+            android:layout_width="match_parent"
+            android:layout_height="179dp"
+            android:layout_marginTop="-20dp"
+            app:srcCompat="@drawable/river" />
+
+        <ImageView
+            android:id="@+id/safezone"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="-30dp"
+            app:srcCompat="@drawable/safezone" />
+
+        <ImageView
+            android:id="@+id/road"
+            android:layout_width="match_parent"
+            android:layout_height="232dp"
+            android:layout_marginTop="-30dp"
+            app:srcCompat="@drawable/road" />
+
+        <ImageView
+            android:id="@+id/sprite"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/frog_char_1" />
+
+        <ImageView
+            android:id="@+id/car1"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:translationY="-245dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/cars1"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/car2"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:translationX="320dp"
+            android:translationY="-250dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/cars2"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/car3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:translationY="-260dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/cars3"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/log1"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:translationY="-520dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/log1"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/log2"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:translationX="170dp"
+            android:translationY="-560dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/log2"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/lilly1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="320dp"
+            android:translationY="-600dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/lilly"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/lilly2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="20dp"
+            android:translationY="-680dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/lilly"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/lilly3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="100dp"
+            android:translationY="-720dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/lilly"
+            tools:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/log3"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:translationX="360dp"
+            android:translationY="-760dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/log1"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/log4"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:translationX="40dp"
+            android:translationY="-840dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/log1"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/lilly4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="180dp"
+            android:translationY="-880dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/lilly"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/log5"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:translationX="280dp"
+            android:translationY="-920dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/log2"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/lilly5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="40dp"
+            android:translationY="-1000dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/lilly"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/lilly6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="100dp"
+            android:translationY="-1040dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/lilly"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/lilly7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="240dp"
+            android:translationY="-1080dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/lilly"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/lilly8"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="340dp"
+            android:translationY="-1120dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/lilly"
+            tools:visibility="visible" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
